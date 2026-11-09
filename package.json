@@ -12,9 +12,12 @@
     "dev": "eve dev",
     "eval": "eve eval",
     "start": "eve start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "build:claude": "REPRO_MODEL=claude-opus-5 eve build",
+    "build:gemini": "REPRO_MODEL=gemini-2.5-flash eve build"
   },
   "dependencies": {
+    "@ai-sdk/google-vertex": "5.0.111",
     "@vercel/connect": "2.7.0",
     "ai": "^7.0.137",
     "eve": "^1.0.0-rc.6",
@@ -27,5 +30,4 @@
   "engines": {
     "node": "24.x"
   }
-
 }
